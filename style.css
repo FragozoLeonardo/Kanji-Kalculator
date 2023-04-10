@@ -30,17 +30,24 @@ padding-inline-end: 0.75rem;
   font-size: 3rem;
 }
 
+.buttons > *:hover{
+  background: hsl(208, 65%, 61%) ;
+}
+
 .equal {
   flex: 1 0 100%;
   padding: 1.5rem;
-  background: hsl(357, 100%, 72%);
+  background: hsl(357, 49%, 72%);
   color: hsl(255, 100%, 100%);
   font-size: 3rem;
 }
 
+.equal:hover{
+  background: hsl(357, 100%, 72%);
+
+}
 .spacer {
-  flex: 1 0 25%;
-  order: 2;
+  order: 1;
 }
 
 .credits{
