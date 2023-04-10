@@ -1,4 +1,4 @@
-This is a Kanji (Japanese Script) button calculator, once you press the symbol, the calculator prints it's occidental version and do the calculi.
+This is a Kanji (Japanese Script) button calculator, once you press the symbol, the calculator prints it's occidental version on it's "display" and do the calculi.
 
 It's made as a joke (and maybe can be useful for people that are learning some Japanese Kanji used in math), Japanese electronic calculators use the "occidental" notation (1,2, +,- etc) and it's the last project from The Odin Project foundations section.
 
