@@ -4,27 +4,52 @@ It's made as joke, Japanese electronic calculators use the "occidental" notation
 
 This is a table with the symbol and the "occidental" symbols meanings:
 
-**Numbers**
+**Numbers:**
 
 零 : 0
+
+
 一 : 1
+
+
 二 : 2
+
 三 : 3
+
+
 四 : 4
+
+
 五 : 5
+
+
 六 : 6
+
+
 七 : 7
+
+
 八 : 8
+
+
 九 : 9
 
-**Operations**
+**Operations:**
 
 足 : +
+
+
 引 : -
+
+
 掛 : *
+
+
 割 : /
 
-**Other buttons**
+**Other buttons:**
 
 消 : C
+
+
 は : =
