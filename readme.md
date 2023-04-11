@@ -1,6 +1,6 @@
-This is a Kanji (Japanese Script) button calculator, once you press the symbol, the calculator prints it's usual version on it's "display" and do the calculi.
+This is a Kanji (Japanese Script) button calculator, once you press the symbol, the calculator prints its usual version (of the number or the operation) on it's "display" and do the calculi.
 
-It's made as a joke (and maybe can be useful for people that are learning some Japanese Kanji used in math), Japanese electronic calculators use the "same as the used everywhere" notation (1,2, +,- etc) and it's the last project from The Odin Project foundations section.
+Its made as a joke (and maybe can be useful for people that are learning some Kanji used in math), Japanese electronic calculators use the "same as the used everywhere" notation (1,2, +,- etc) and it's the last project from The Odin Project foundations section.
 
 This is a table with the symbol and the "usual" calculator symbols:
 
@@ -55,4 +55,4 @@ This is a table with the symbol and the "usual" calculator symbols:
 
 は : =
 
-Note: by personal choice it only support 16 digits to do the calculi.
+Note: by personal choice it only supports 16 digits to do the calculi, and I did only a dark theme.
