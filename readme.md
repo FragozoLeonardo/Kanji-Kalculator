@@ -8,18 +8,18 @@ This is a table with the symbol and the "usual" calculators symbols:
 
 | Japanese Symbol | Regular Notation | Japanese Symbol   | Regular Notation |
 |-----------------|------------------|-------------------|------------------|
-|       零         |         0        ||       五         |         5        |
-|       一         |         1        ||       六         |         6        |
-|       二         |         2        ||       七         |         7        |
-|       三         |         3        ||       八         |         8        |
-|       四         |         4        ||       九         |         9        |
+|       零         |         0        |       五         |         5        |
+|       一         |         1        |       六         |         6        |
+|       二         |         2        |       七         |         7        |
+|       三         |         3        |       八         |         8        |
+|       四         |         4        |       九         |         9        |
 
 **Operations:**
 
 | Japanese Symbol | Regular Notation | Japanese Symbol   | Regular Notation |
 |-----------------|------------------|-------------------|------------------|
-|       足         |         +        ||       掛         |         *        |
-|       引         |         -        ||       割         |         /        |
+|       足         |         +        |       掛         |         *        |
+|       引         |         -        |       割         |         /        |
 
 **Other buttons:**
 
