@@ -6,53 +6,25 @@ This is a table with the symbol and the "usual" calculators symbols:
 
 **Numbers:**
 
-零 : 0
-
-
-一 : 1
-
-
-二 : 2
-
-
-三 : 3
-
-
-四 : 4
-
-
-五 : 5
-
-
-六 : 6
-
-
-七 : 7
-
-
-八 : 8
-
-
-九 : 9
+| Japanese Symbol | Regular Notation | Japanese Symbol   | Regular Notation |
+|-----------------|------------------|-------------------|------------------|
+|       零         |         0        ||       五         |         5        |
+|       一         |         1        ||       六         |         6        |
+|       二         |         2        ||       七         |         7        |
+|       三         |         3        ||       八         |         8        |
+|       四         |         4        ||       九         |         9        |
 
 **Operations:**
 
-足 : +
-
-
-引 : -
-
-
-掛 : *
-
-
-割 : /
+| Japanese Symbol | Regular Notation | Japanese Symbol   | Regular Notation |
+|-----------------|------------------|-------------------|------------------|
+|       足         |         +        ||       掛         |         *        |
+|       引         |         -        ||       割         |         /        |
 
 **Other buttons:**
 
-消 : C (Clear)
-
-
-は : =
+| Japanese Symbol | Regular Notation | Japanese Symbol   | Regular Notation |
+|-----------------|------------------|-------------------|------------------|
+|       は        |         =         |        消        |         C (Clear) |
 
 Note: by personal choice it only supports 16 digits to do the calculi, it only has a dark theme.
