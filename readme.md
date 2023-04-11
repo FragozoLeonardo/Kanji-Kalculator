@@ -50,7 +50,7 @@ This is a table with the symbol and the "usual" calculator symbols:
 
 **Other buttons:**
 
-消 : C
+消 : C (Clear)
 
 
 は : =
