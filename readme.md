@@ -54,3 +54,5 @@ This is a table with the symbol and the "usual" calculator symbols:
 
 
 は : =
+
+Note: by personal choice it only support 16 digits to do the calculi.
