@@ -22,13 +22,13 @@
     min-height: 6vw;
   }
 
-  .buttons {
+  .btns {
     display: flex;
     flex-wrap: wrap;
     margin-top: 5vw;
   }
 
-  .buttons > * {
+  .btns > * {
     flex: 1 0 25%;
     padding: 1.5vw;
     background-color: hsl(0, 0%, 100%);
@@ -36,16 +36,16 @@
     font-size: 3vw;
   }
 
-  .buttons > *:focus,
-  .buttons > *:hover {
+  .btns > *:focus,
+  .btns > *:hover {
     background-color: hsl(0, 0%, 90%);
   }
 
-  .buttons > * {
+  .btns > * {
     transition: all 0.2s ease-in-out;
   }
 
-  .btnequal {
+  .btn-eql {
     flex: 1 0 100%;
     padding: 1.5vw;
     background-color: hsl(6, 63%, 50%);
@@ -53,8 +53,8 @@
     font-size: 3vw;
   }
 
-  .btnequal:focus,
-  .btnequal:hover {
+  .btn-eql:focus,
+  .btn-eql:hover {
     background-color: hsl(6, 70%, 50%);
   }
 
@@ -69,20 +69,20 @@
       display: none;
     }
 
-    .buttons {
+    .btns {
       flex-direction: column;
       align-items: center;
       margin-top: 3vw;
     }
 
-    .buttons > * {
+    .btns > * {
       flex: 1 0 20%;
       margin: 1vw;
       font-size: 4vw;
       padding: 2.5vw;
     }
 
-    .btnequal {
+    .btn-eql {
       flex: 1 0 40%;
     }
   }

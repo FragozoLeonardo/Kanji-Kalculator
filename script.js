@@ -1,4 +1,4 @@
-const btnNumber = document.querySelectorAll(".btn-number");
+const btnNumber = document.querySelectorAll(".btn-num");
 const displayElement = document.getElementById("display");
 let currentValue = "";
 btnNumber.forEach((button) => {
@@ -26,7 +26,7 @@ btnNumber.forEach((button) => {
   });
 });
 
-var btnOperation = document.getElementsByClassName("btn-op");
+var btnOperation = document.getElementsByClassName("btn-opr");
 
 for (var i = 0; i < btnOperation.length; i++) {
   btnOperation[i].addEventListener("click", function () {
@@ -41,7 +41,7 @@ for (var i = 0; i < btnOperation.length; i++) {
   });
 }
 
-var btnClear = document.getElementsByClassName("btn-clear");
+var btnClear = document.getElementsByClassName("btn-cln");
 
 for (var i = 0; i < btnClear.length; i++) {
   btnClear[i].addEventListener("click", function () {
