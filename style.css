@@ -6,7 +6,7 @@
     color: hsl(202, 11%, 29%);
   }
 
-.display {
+#display {
 font-size: 6rem;;
 text-align: end;
 background: hsl(207, 19%, 61%);
@@ -14,6 +14,7 @@ color: hsl(255, 100%, 100%);
 padding-block-start: 0.25rem;
 padding-block-end: 0.25rem;
 padding-inline-end: 0.75rem;
+min-height: 6rem;
 }
 
 .buttons {
@@ -34,7 +35,7 @@ padding-inline-end: 0.75rem;
   background: hsl(208, 65%, 61%) ;
 }
 
-.equal {
+.btnequal {
   flex: 1 0 100%;
   padding: 1.5rem;
   background: hsl(357, 49%, 72%);
@@ -42,7 +43,7 @@ padding-inline-end: 0.75rem;
   font-size: 3rem;
 }
 
-.equal:hover{
+.btnequal:hover{
   background: hsl(357, 100%, 72%);
 
 }

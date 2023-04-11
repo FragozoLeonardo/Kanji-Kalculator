@@ -9,31 +9,32 @@
 </head>
 <body>
   <div class="calculator">
-      <div class="display">0</div>
-      <div class="buttons">
-        <button>七</button>
-        <button>八</button>
-        <button>九</button>
-        <button>割</button>
+    <div id="display">0</div>
+     <div class="buttons">
+        <button class="btn-number" data-num="7">七</button>
+        <button class="btn-number" data-num="8">八</button>
+        <button class="btn-number" data-num="9">九</button>
+        <button class="btn-op" data-op="/">割</button>
         <div class="spacer"> </div>
-        <button>四</button>
-        <button>五</button>
-        <button>六</button>
-        <button>掛</button>
+        <button class="btn-number" data-num="4">四</button>
+        <button class="btn-number" data-num="5">五</button>
+        <button class="btn-number" data-num="6">六</button>
+        <button class="btn-op" data-op="*">掛</button>
         <div class="spacer"> </div>
-        <button>一</button>
-        <button>二</button>
-        <button>三</button>
-        <button>引</button>
+        <button class="btn-number" data-num="1">一</button>
+        <button class="btn-number" data-num="2">二</button>
+        <button class="btn-number" data-num="3">三</button>
+        <button class="btn-op" data-op="-">引</button>
         <div class="spacer"> </div>
-        <button>零</button>
-        <button>.</button>
-        <button>消</button>
-        <button>足</button>
+        <button class="btn-number" data-num="0">零</button>
+        <button class="btn-number" data-num=".">.</button>
+        <button class="btn-clear" data-del="">消</button>
+        <button class="btn-op" data-op="+">足</button>
         <div class="spacer"> </div>
-        <button class="equal">は</button>
-      </div>
-      <div class=credits> Made by Leonardo Quadros Fragozo </div>
+        <button class="btnequal">は</button>
+    </div>
+    <div class=credits> Made by Leonardo Quadros Fragozo </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
