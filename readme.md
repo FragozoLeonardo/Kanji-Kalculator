@@ -1,4 +1,4 @@
-[![Sample Screenshot](https://i.postimg.cc/DfJpNZKQ/Screenshot-from-2023-04-11-17-02-11.png)](https://postimg.cc/QVDq9jCV)
+[![Sample Screenshot](https://i.postimg.cc/44HZ1sLq/Screenshot-from-2023-04-11-17-07-30.png)](https://postimg.cc/HjmfYDC9)
 
 This is a Kanji (Japanese Script) button calculator, once you press the symbol, the calculator prints its usual version (of the number or the operation) on it's "display" and do the calculi.
 
