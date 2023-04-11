@@ -1,3 +1,5 @@
+[![Sample Screenshot](https://i.postimg.cc/DfJpNZKQ/Screenshot-from-2023-04-11-17-02-11.png)](https://postimg.cc/QVDq9jCV)
+
 This is a Kanji (Japanese Script) button calculator, once you press the symbol, the calculator prints its usual version (of the number or the operation) on it's "display" and do the calculi.
 
 Its made as a joke (and maybe can be useful for people that are learning some Kanji used in math), Japanese electronic calculators use the "same as the used everywhere" notation (1,2, +,- etc) and it's the last project from The Odin Project foundations section.
