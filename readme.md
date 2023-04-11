@@ -55,4 +55,4 @@ This is a table with the symbol and the "usual" calculators symbols:
 
 は : =
 
-Note: by personal choice it only supports 16 digits to do the calculi, and I did only a dark theme.
+Note: by personal choice it only supports 16 digits to do the calculi, it only has a dark theme.
