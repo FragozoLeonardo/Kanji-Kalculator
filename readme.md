@@ -27,4 +27,4 @@ Below, you will find tables containing Japanese symbols alongside their correspo
 |-----------------|------------------|-------------------|------------------|
 |       消        |      C (Clear)　　|　　　　は        　　|         =        |
 
-Note: By personal choice, it only supports 16 digits for processing calculations and only has a dark theme, I also added Keyboard support.
+Note: By personal choice, it only supports 16 digits for processing calculations and only has a dark theme.

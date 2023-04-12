@@ -1,111 +1,92 @@
-var currentValue = "0";
-var selectedOperation = null;
-var firstNumber = null;
-var result = null;
+let firstOperand = '';
+let secondOperand = '';
+let operator = '';
+let result = null;
 
-function updateDisplay() {
-  var displayElement = document.getElementById("display");
-  if (displayElement) {
-    if (currentValue === "0" && selectedOperation) {
-      displayElement.textContent = selectedOperation;
-    } else {
-      displayElement.textContent = currentValue;
+const buttons = document.querySelectorAll('.btn-num, .btn-opr, .btn-clr, .btn-eql');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const { target } = event;
+
+    if (target.classList.contains('btn-num')) {
+      handleNumberInput(target.dataset.num);
+    } else if (target.classList.contains('btn-opr')) {
+      handleOperatorInput(target.dataset.op);
+    } else if (target.classList.contains('btn-eql')) {
+      handleEqualsInput();
+    } else if (target.classList.contains('btn-clr')) {
+      handleClearInput();
     }
+  });
+});
+
+function handleNumberInput(number) {
+  if (number === ',' || number === '.') {
+    number = '.';
+  }
+
+  if (operator === '') {
+    firstOperand += number;
+    updateDisplay(firstOperand);
   } else {
-    console.error('Element with ID "display" not found');
+    secondOperand += number;
+    updateDisplay(secondOperand);
   }
 }
 
-function clear() {
-  currentValue = "0";
-  selectedOperation = null;
-  firstNumber = null;
+function handleOperatorInput(op) {
+  if (firstOperand === '') {
+    return;
+  }
+
+  if (secondOperand !== '') {
+    handleEqualsInput();
+  }
+
+  operator = op;
+}
+
+function handleEqualsInput() {
+  if (operator === '' || secondOperand === '') {
+    return;
+  }
+
+  const num1 = parseFloat(firstOperand);
+  const num2 = parseFloat(secondOperand);
+
+  switch (operator) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      result = num1 / num2;
+      break;
+    default:
+      return;
+  }
+
+  updateDisplay(result);
+  firstOperand = result.toString();
+  secondOperand = '';
+  operator = '';
+}
+
+function handleClearInput() {
+  firstOperand = '';
+  secondOperand = '';
+  operator = '';
   result = null;
-  updateDisplay();
+  updateDisplay('0');
 }
 
-function handleNumberClick(number) {
-  if (currentValue === "0" || selectedOperation) {
-    currentValue = number;
-  } else {
-    if (currentValue === firstNumber.toString() || currentValue === result.toString()) {
-      currentValue = number;
-    } else {
-      currentValue += number;
-    }
-  }
-  updateDisplay();
+function updateDisplay(value) {
+  const display = document.getElementById('display');
+  display.textContent = value;
 }
-
-function handleOperationClick(operation) {
-  if (!selectedOperation) {
-    selectedOperation = operation;
-    firstNumber = parseFloat(currentValue);
-    currentValue = "0";
-    updateDisplay();
-  }
-}
-
-function calculate() {
-  if (selectedOperation) {
-    var displayElement = document.getElementById("display");
-    if (displayElement) {
-      var secondNumber = parseFloat(currentValue);
-      switch (selectedOperation) {
-        case "+":
-          result = firstNumber + secondNumber;
-          break;
-        case "-":
-          result = firstNumber - secondNumber;
-          break;
-        case "*":
-          result = firstNumber * secondNumber;
-          break;
-        case "/":
-          result = firstNumber / secondNumber;
-          break;
-      }
-      currentValue = result.toString();
-      selectedOperation = null;
-      firstNumber = null;
-      updateDisplay();
-    } else {
-      console.error('Element with ID "display" not found');
-    }
-  }
-}
-
-var btnClear = document.querySelector(".btn-cln");
-btnClear.addEventListener("click", clear);
-
-var btnNumbers = document.querySelectorAll(".btn-num");
-btnNumbers.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    var number = this.getAttribute("data-num");
-    handleNumberClick(number);
-  });
-});
-
-var btnOperations = document.querySelectorAll(".btn-opr");
-btnOperations.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    var operation = this.getAttribute("data-op");
-    handleOperationClick(operation);
-  });
-});
-
-var btnEqual = document.querySelector(".btn-eql");
-btnEqual.addEventListener("click", calculate);
-
-document.addEventListener("keydown", function (event) {
-  var key = event.key;
-  if (/\d/.test(key)) {
-    handleNumberClick(key);
-  } else if (key === "+" || key === "-" || key === "*" || key === "/") {
-    handleOperationClick(key);
-  } else if (key === "Enter" || key === "=") {
-    calculate();
-  } else if (key === "Escape") {
-    clear();
-  }
-});
