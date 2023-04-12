@@ -1,88 +1,88 @@
 :root {
-    --dark-bg: hsl(0, 0%, 10%);
-  }
+  --dark-bg: hsl(0, 0%, 10%);
+}
 
-  .calculator {
-    max-inline-size: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 20px 4px 0px rgba(0, 0, 0, 0.12);
-    background-color: var(--dark-bg);
-    color: hsl(0, 0%, 100%);
-  }
+.calculator {
+  max-inline-size: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 20px 4px 0px rgba(0, 0, 0, 0.12);
+  background-color: var(--dark-bg);
+  color: hsl(0, 0%, 100%);
+}
 
-  #display {
-    font-size: 6vw;
-    text-align: end;
-    background-color: hsl(0, 0%, 100%);
-    color: var(--dark-bg);
-    padding-block-start: 0.25rem;
-    padding-block-end: 0.25rem;
-    padding-inline-end: 0.75rem;
-    min-height: 6vw;
+#display {
+  font-size: 6vw;
+  text-align: end;
+  background-color: hsl(0, 0%, 100%);
+  color: var(--dark-bg);
+  padding-block-start: 0.25rem;
+  padding-block-end: 0.25rem;
+  padding-inline-end: 0.75rem;
+  min-height: 6vw;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+}
+
+.btns > * {
+  flex: 1 0 25%;
+  padding: 1.5vw;
+  background-color: hsl(0, 0%, 100%);
+  color: var(--dark-bg);
+  font-size: 3vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.btns > *:focus,
+.btns > *:hover,
+.btns > *.active {
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-eql {
+  flex: 1 0 100%;
+  padding: 1.5vw;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  font-size: 3vw;
+}
+
+.btn-eql:focus,
+.btn-eql:hover {
+  background-color: hsl(6, 70%, 50%);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.credits {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .credits {
+    display: none;
   }
 
   .btns {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
   }
 
   .btns > * {
-    flex: 1 0 25%;
-    padding: 1.5vw;
-    background-color: hsl(0, 0%, 100%);
-    color: var(--dark-bg);
-    font-size: 3vw;
-  }
-
-  .btns > *:focus,
-  .btns > *:hover {
-    background-color: hsl(0, 0%, 90%);
-  }
-
-  .btns > * {
-    transition: all 0.2s ease-in-out;
+    flex: 1 0 20%;
+    margin: 1vw;
+    font-size: 4vw;
+    padding: 2.5vw;
   }
 
   .btn-eql {
-    flex: 1 0 100%;
-    padding: 1.5vw;
-    background-color: hsl(6, 63%, 50%);
-    color: hsl(0, 0%, 100%);
-    font-size: 3vw;
+    flex: 1 0 40%;
   }
-
-  .btn-eql:focus,
-  .btn-eql:hover {
-    background-color: hsl(6, 70%, 50%);
-  }
-
-  .credits {
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 18px;
-  }
-
-  @media (max-width: 768px) {
-    .credits {
-      display: none;
-    }
-
-    .btns {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 3vw;
-    }
-
-    .btns > * {
-      flex: 1 0 20%;
-      margin: 1vw;
-      font-size: 4vw;
-      padding: 2.5vw;
-    }
-
-    .btn-eql {
-      flex: 1 0 40%;
-    }
-  }
+}

@@ -1,58 +1,111 @@
-const btnNumber = document.querySelectorAll(".btn-num");
-const displayElement = document.getElementById("display");
-let currentValue = "";
-btnNumber.forEach((button) => {
-  button.addEventListener("click", function () {
-    const number = this.getAttribute("data-num");
-    if (number === ".") {
-      if (!currentValue.includes(".")) {
-        currentValue += number;
-      }
+var currentValue = "0";
+var selectedOperation = null;
+var firstNumber = null;
+var result = null;
+
+function updateDisplay() {
+  var displayElement = document.getElementById("display");
+  if (displayElement) {
+    if (currentValue === "0" && selectedOperation) {
+      displayElement.textContent = selectedOperation;
     } else {
-      if (currentValue === "0") {
-        if (number !== "0") {
-          currentValue = number;
-        }
-      } else {
-        if (currentValue.length < 16) {
-          currentValue += number;
-        }
+      displayElement.textContent = currentValue;
+    }
+  } else {
+    console.error('Element with ID "display" not found');
+  }
+}
+
+function clear() {
+  currentValue = "0";
+  selectedOperation = null;
+  firstNumber = null;
+  result = null;
+  updateDisplay();
+}
+
+function handleNumberClick(number) {
+  if (currentValue === "0" || selectedOperation) {
+    currentValue = number;
+  } else {
+    if (currentValue === firstNumber.toString() || currentValue === result.toString()) {
+      currentValue = number;
+    } else {
+      currentValue += number;
+    }
+  }
+  updateDisplay();
+}
+
+function handleOperationClick(operation) {
+  if (!selectedOperation) {
+    selectedOperation = operation;
+    firstNumber = parseFloat(currentValue);
+    currentValue = "0";
+    updateDisplay();
+  }
+}
+
+function calculate() {
+  if (selectedOperation) {
+    var displayElement = document.getElementById("display");
+    if (displayElement) {
+      var secondNumber = parseFloat(currentValue);
+      switch (selectedOperation) {
+        case "+":
+          result = firstNumber + secondNumber;
+          break;
+        case "-":
+          result = firstNumber - secondNumber;
+          break;
+        case "*":
+          result = firstNumber * secondNumber;
+          break;
+        case "/":
+          result = firstNumber / secondNumber;
+          break;
       }
+      currentValue = result.toString();
+      selectedOperation = null;
+      firstNumber = null;
+      updateDisplay();
+    } else {
+      console.error('Element with ID "display" not found');
     }
-    if (currentValue.length > 1 && currentValue[0] === "0" && currentValue[1] !== ".") {
-      currentValue = currentValue.slice(1);
-    }
-    displayElement.textContent = currentValue;
+  }
+}
+
+var btnClear = document.querySelector(".btn-cln");
+btnClear.addEventListener("click", clear);
+
+var btnNumbers = document.querySelectorAll(".btn-num");
+btnNumbers.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var number = this.getAttribute("data-num");
+    handleNumberClick(number);
   });
 });
 
-var btnOperation = document.getElementsByClassName("btn-opr");
-
-for (var i = 0; i < btnOperation.length; i++) {
-  btnOperation[i].addEventListener("click", function () {
+var btnOperations = document.querySelectorAll(".btn-opr");
+btnOperations.forEach(function (btn) {
+  btn.addEventListener("click", function () {
     var operation = this.getAttribute("data-op");
-
-    var displayElement = document.getElementById("display");
-    if (displayElement) {
-      displayElement.textContent = operation;
-    } else {
-      console.error('Element with ID "display" not found');
-    }
+    handleOperationClick(operation);
   });
-}
+});
 
-var btnClear = document.getElementsByClassName("btn-cln");
+var btnEqual = document.querySelector(".btn-eql");
+btnEqual.addEventListener("click", calculate);
 
-for (var i = 0; i < btnClear.length; i++) {
-  btnClear[i].addEventListener("click", function () {
-    var clear = this.getAttribute("data-clear");
-
-    var displayElement = document.getElementById("display");
-    if (displayElement) {
-      currentValue = "0";
-      displayElement.textContent = currentValue;
-    } else {
-      console.error('Element with ID "display" not found');
-    }
-  });
-}
+document.addEventListener("keydown", function (event) {
+  var key = event.key;
+  if (/\d/.test(key)) {
+    handleNumberClick(key);
+  } else if (key === "+" || key === "-" || key === "*" || key === "/") {
+    handleOperationClick(key);
+  } else if (key === "Enter" || key === "=") {
+    calculate();
+  } else if (key === "Escape") {
+    clear();
+  }
+});
