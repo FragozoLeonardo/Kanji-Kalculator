@@ -7,15 +7,19 @@ const buttons = document.querySelectorAll('.btn-num, .btn-opr, .btn-clr, .btn-eq
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    const { target } = event;
+    const target = event.target;
+    const isNumber = target.classList.contains('btn-num');
+    const isOperator = target.classList.contains('btn-opr');
+    const isEquals = target.classList.contains('btn-eql');
+    const isClear = target.classList.contains('btn-clr');
 
-    if (target.classList.contains('btn-num')) {
+    if (isNumber) {
       handleNumberInput(target.dataset.num);
-    } else if (target.classList.contains('btn-opr')) {
+    } else if (isOperator) {
       handleOperatorInput(target.dataset.op);
-    } else if (target.classList.contains('btn-eql')) {
+    } else if (isEquals) {
       handleEqualsInput();
-    } else if (target.classList.contains('btn-clr')) {
+    } else if (isClear) {
       handleClearInput();
     }
   });
@@ -28,11 +32,10 @@ function handleNumberInput(number) {
 
   if (operator === '') {
     firstOperand += number;
-    updateDisplay(firstOperand);
   } else {
     secondOperand += number;
-    updateDisplay(secondOperand);
   }
+  updateDisplay(getCurrentOperand());
 }
 
 function handleOperatorInput(op) {
@@ -72,10 +75,10 @@ function handleEqualsInput() {
       return;
   }
 
-  updateDisplay(result);
   firstOperand = result.toString();
   secondOperand = '';
   operator = '';
+  updateDisplay(result);
 }
 
 function handleClearInput() {
@@ -89,4 +92,8 @@ function handleClearInput() {
 function updateDisplay(value) {
   const display = document.getElementById('display');
   display.textContent = value;
+}
+
+function getCurrentOperand() {
+  return secondOperand === '' ? firstOperand : secondOperand;
 }
