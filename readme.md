@@ -1,4 +1,4 @@
-[![Sample Screenshot](https://i.postimg.cc/Dy4qtQtr/Screenshot-from-2023-04-11-19-09-19.png)](https://postimg.cc/HjmfYDC9)
+https://i.postimg.cc/Dy4qtQtr/Screenshot-from-2023-04-11-19-09-19.png
 
 It is made as a joke (and maybe can be useful for people that are learning some Kanji used in math). Japanese electronic calculators use the "same as the used everywhere in the world" notation (1, 2, +, - and so on). This is my take on the last project from The Odin Project Foundations section.
 
