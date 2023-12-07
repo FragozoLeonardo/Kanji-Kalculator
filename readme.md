@@ -1,4 +1,4 @@
-[![Screenshot-from-2023-04-13-09-50-15.png](https://i.postimg.cc/44HZ1sLq/Screenshot-from-2023-04-13-09-50-15.png)](https://postimg.cc/zbbfyn5X)
+[![Screenshot-from-2023-04-13-09-50-15.png](https://i.postimg.cc/44HZ1sLq/Screenshot-from-2023-04-13-09-50-15.png)](https://postlmg.cc/44HZ1sLq)
 
 It is made as a joke (and maybe can be useful for people that are learning some Kanji used in math). Japanese electronic calculators use the "same as the used everywhere in the world" notation (1, 2, +, - and so on). This is my take on the last project from The Odin Project Foundations section.
 
@@ -28,3 +28,5 @@ Below, you will find tables containing Japanese symbols alongside their correspo
 |       消        |      C (Clear)　　|　　　　は        　　|         =        |
 
 Note: By personal choice, it only supports 16 digits for processing calculations and only has a dark theme.
+
+[Try it online](https://codepen.io/FragozoLeo/pen/qBggJKy)
