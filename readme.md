@@ -5,7 +5,7 @@
 ### Descrição
 
 Este projeto é o [último desafio da seção Foundations do The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator).  
-A "K"anji Kalculator é uma calculadora com interface em japonês, criada como uma brincadeira e também como uma ferramenta para quem está aprendendo os kanji usados em matemática.
+A Kanji "K"alculator é uma calculadora com interface em japonês, criada como uma brincadeira e também como uma ferramenta para quem está aprendendo os kanji usados em matemática.
 
 Embora calculadoras japonesas utilizem notação padrão mundial (1, 2, +, - etc.), esta é uma proposta alternativa e divertida.
 
@@ -62,7 +62,7 @@ Contribuições são bem-vindas! Envie um pull request com melhorias ou sugestõ
 ### Description
 
 This is the [final project of The Odin Project Foundations section](https://www.theodinproject.com/lessons/foundations-calculator).  
-Kanji Kalculator is a Japanese interface calculator built as a joke and as a study tool for learners of mathematical kanji.
+Kanji "K"alculator is a Japanese interface calculator built as a joke and as a study tool for learners of mathematical kanji.
 
 While real Japanese calculators use standard notation (1, 2, +, - etc.), this is a playful and educational variation.
 
