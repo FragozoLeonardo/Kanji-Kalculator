@@ -1,37 +1,36 @@
-[![Screenshot-from-2023-04-13-09-50-15.png](https://i.postimg.cc/44HZ1sLq/Screenshot-from-2023-04-13-09-50-15.png)](https://postlmg.cc/44HZ1sLq)
+[![Screenshot-from-2023-04-13-09-50-15.png](https://i.postimg.cc/44HZ1sLq/Screenshot-from-2023-04-13-09-50-15.png)](https://postimg.cc/44HZ1sLq)
 
-### 🇧🇷 "K"alculadora Em Kanji 🇧🇷
+## 🇧🇷 Kanji Kalculator 🧮
 
-[Este](https://www.theodinproject.com/lessons/foundations-calculator) projeto é uma calculadora com interface em japonês, criada como uma brincadeira e também como uma ferramenta para quem está aprendendo os kanji usados em matemática. Calculadoras eletrônicas japonesas usam a notação padrão mundial (1, 2, +, - etc.), mas esta é uma interpretação única para o último projeto da seção Foundations do The Odin Project.
+### Descrição
 
-Como Usar
+Este projeto é o [último desafio da seção Foundations do The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator).  
+A "K"anji Kalculator é uma calculadora com interface em japonês, criada como uma brincadeira e também como uma ferramenta para quem está aprendendo os kanji usados em matemática.
 
-1.  Clone este repositório para sua máquina local usando o seguinte comando:
+Embora calculadoras japonesas utilizem notação padrão mundial (1, 2, +, - etc.), esta é uma proposta alternativa e divertida.
 
-    ```bash
-    git clone https://github.com/FragozoLeonardo/kanji-kalculator.git
-    ```
+### Como Usar
 
-2.  Navegue até o diretório do projeto:
+```bash
+git clone https://github.com/FragozoLeonardo/Kanji-Kalculator.git
+cd Kanji-Kalculator
+```
 
-    ```bash
-    cd kanji-kalculator
-    ```
+Abra o arquivo `calc.html` em seu navegador.
 
-3.  Abra o arquivo `index.html` em seu navegador web.
+### Conteúdo
 
-Conteúdo
+- Interface japonesa com uso de kanji para números e operações  
+- Limitação de 16 dígitos  
+- Tema escuro  
+- Layout responsivo  
 
-* Calculadora com interface em japonês.
-* Uso de kanji para números e operações matemáticas.
-* Limitação de 16 dígitos e tema escuro.
-
-Abaixo, você encontrará tabelas contendo os símbolos japoneses e seus correspondentes símbolos de calculadora "usuais":
+### Tabelas de Referência
 
 **Números:**
 
 | Símbolo Japonês | Notação Regular | Símbolo Japonês | Notação Regular |
-|-----------------|------------------|-------------------|------------------|
+|-----------------|------------------|------------------|------------------|
 | 七              | 7                | 四              | 4                |
 | 八              | 8                | 三              | 3                |
 | 九              | 9                | 二              | 2                |
@@ -41,54 +40,54 @@ Abaixo, você encontrará tabelas contendo os símbolos japoneses e seus corresp
 **Operações:**
 
 | Símbolo Japonês | Notação Regular | Símbolo Japonês | Notação Regular |
-|-----------------|------------------|-------------------|------------------|
+|-----------------|------------------|------------------|------------------|
 | 割              | /                | 引              | -                |
-| 掛              | * | 足              | +                |
+| 掛              | *                | 足              | +                |
 
 **Outros botões:**
 
-| Símbolo Japonês | Notação Regular | Símbolo Japonês | Notação Regular |
-|-----------------|------------------|-------------------|------------------|
-| 消              | C (Clear)        | は              | =                |
+| Símbolo Japonês | Função           | Símbolo Japonês | Função           |
+|-----------------|------------------|------------------|------------------|
+| 消              | C (Limpar)       | は              | =                |
 
-Contribuição
+### Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias ou novas funcionalidades.
+Contribuições são bem-vindas! Envie um pull request com melhorias ou sugestões.  
+[**Teste online no CodePen**](https://codepen.io/FragozoLeo/pen/qBggJKy)
 
-[Teste online](https://codepen.io/FragozoLeo/pen/qBggJKy)
+---
 
-### 🇺🇸 Kanji Kalculator 🇺🇸
+## 🇺🇸 Kanji Kalculator 🧮
 
-[This](https://www.theodinproject.com/lessons/foundations-calculator) project is a Japanese interface calculator, created as a joke and also as a tool for those learning kanji used in mathematics. Japanese electronic calculators use the standard worldwide notation (1, 2, +, - etc.), but this is a unique interpretation for the last project of The Odin Project Foundations section.
+### Description
 
-How to Use
+This is the [final project of The Odin Project Foundations section](https://www.theodinproject.com/lessons/foundations-calculator).  
+Kanji Kalculator is a Japanese interface calculator built as a joke and as a study tool for learners of mathematical kanji.
 
-1.  Clone this repository to your local machine using the following command:
+While real Japanese calculators use standard notation (1, 2, +, - etc.), this is a playful and educational variation.
 
-    ```bash
-    git clone https://github.com/FragozoLeonardo/kanji-kalculator.git
-    ```
+### How to Use
 
-2.  Navigate to the project directory:
+```bash
+git clone https://github.com/FragozoLeonardo/Kanji-Kalculator.git
+cd Kanji-Kalculator
+```
 
-    ```bash
-    cd kanji-kalculator
-    ```
+Open the `calc.html` file in your browser.
 
-3.  Open the `index.html` file in your web browser.
+### Content
 
-Content
+- Japanese interface using kanji for numbers and operations  
+- 16-digit input limit  
+- Dark theme  
+- Responsive layout  
 
-* Calculator with a Japanese interface.
-* Use of kanji for numbers and mathematical operations.
-* 16-digit limit and dark theme.
-
-Below, you will find tables containing the Japanese symbols and their corresponding "usual" calculator symbols:
+### Reference Tables
 
 **Numbers:**
 
 | Japanese Symbol | Regular Notation | Japanese Symbol | Regular Notation |
-|-----------------|------------------|-------------------|------------------|
+|-----------------|------------------|------------------|------------------|
 | 七              | 7                | 四              | 4                |
 | 八              | 8                | 三              | 3                |
 | 九              | 9                | 二              | 2                |
@@ -98,51 +97,75 @@ Below, you will find tables containing the Japanese symbols and their correspond
 **Operations:**
 
 | Japanese Symbol | Regular Notation | Japanese Symbol | Regular Notation |
-|-----------------|------------------|-------------------|------------------|
+|-----------------|------------------|------------------|------------------|
 | 割              | /                | 引              | -                |
-| 掛              | * | 足              | +                |
+| 掛              | *                | 足              | +                |
 
 **Other buttons:**
 
-| Japanese Symbol | Regular Notation | Japanese Symbol | Regular Notation |
-|-----------------|------------------|-------------------|------------------|
-| 消              | C (Clear)        | は              | =                |
+| Japanese Symbol | Function          | Japanese Symbol | Function          |
+|-----------------|-------------------|------------------|-------------------|
+| 消              | C (Clear)         | は              | =                 |
 
+### Contribution
 
-Contribution
+Contributions are welcome! Feel free to submit pull requests.  
+[**Try it online on CodePen**](https://codepen.io/FragozoLeo/pen/qBggJKy)
 
-Contributions are welcome! Feel free to submit pull requests with improvements or new features.
+---
 
-[Try It Online](https://codepen.io/FragozoLeo/pen/qBggJKy)
+## 🇯🇵 Kanji Kalculator 🧮
 
-### 🇯🇵 漢字電卓 🇯🇵
+### 説明
 
-[この](https://www.theodinproject.com/lessons/foundations-calculator)プロジェクトは、冗談として、また数学で使用される漢字を学習している人のためのツールとして作成された、日本語インターフェースの電卓です。日本の電子計算機は世界標準の表記（1、2、+、-など）を使用しますが、これはThe Odin Project Foundationsセクションの最後のプロジェクトに対する独自の解釈です。
+このプロジェクトは、[The Odin Projectの「Foundations」セクションの最終課題](https://www.theodinproject.com/lessons/foundations-calculator)です。  
+この電卓は、冗談として、また数学で使われる漢字を学ぶ人のための学習ツールとして作成されました。
 
-使用方法
+実際の日本の電卓は標準表記（1、2、+、-など）を使用しますが、これは遊び心ある代替バージョンです。
 
-1.  次のコマンドを使用して、このリポジトリをローカルマシンにクローンします。
+### 使用方法
 
-    ```bash
-    git clone https://github.com/FragozoLeonardo/kanji-kalculator.git
-    ```
+```bash
+git clone https://github.com/FragozoLeonardo/Kanji-Kalculator.git
+cd Kanji-Kalculator
+```
 
-2.  プロジェクトディレクトリに移動します。
+その後、`calc.html`をブラウザで開いてください。
 
-    ```bash
-    cd kanji-kalculator
-    ```
+### 内容
 
-3.  ウェブブラウザで`index.html`ファイルを開きます。
+- 数字や演算に漢字を使った日本語インターフェース  
+- 最大16桁まで入力可能  
+- ダークテーマとレスポンシブデザイン  
 
-内容
+### 参考表
 
-* 日本語インターフェースの電卓。
-* 数字と数学演算に漢字を使用。
-* 16桁の制限とダークテーマ。
+**数字：**
 
-貢献
+| 漢字 | 数字 | 漢字 | 数字 |
+|------|------|------|------|
+| 七   | 7    | 四   | 4    |
+| 八   | 8    | 三   | 3    |
+| 九   | 9    | 二   | 2    |
+| 五   | 5    | 一   | 1    |
+| 六   | 6    | 零   | 0    |
 
-貢献を歓迎します！改善や新しい機能を含むプルリクエストを自由に送信してください。
+**演算：**
 
-[オンラインで試してください](https://codepen.io/FragozoLeo/pen/qBggJKy)
+| 漢字 | 意味 | 漢字 | 意味 |
+|------|------|------|------|
+| 割   | ÷    | 引   | −    |
+| 掛   | ×    | 足   | ＋    |
+
+**その他のボタン：**
+
+| 漢字 | 意味         | 漢字 | 意味 |
+|------|--------------|------|------|
+| 消   | クリア（C）   | は   | イコール（=） |
+
+### 貢献
+
+改善や提案などのプルリクエストを歓迎します。  
+[**CodePenで試す**](https://codepen.io/FragozoLeo/pen/qBggJKy)
+
+---
