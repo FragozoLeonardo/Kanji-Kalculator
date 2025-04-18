@@ -163,7 +163,7 @@ cd Kanji-Kalculator
 |------|--------------|------|------|
 | 消   | クリア（C）   | は   | イコール（=） |
 
-### 貢献
+### コントリビュート
 
 改善や提案などのプルリクエストを歓迎します。  
 [**CodePenで試す**](https://codepen.io/FragozoLeo/pen/qBggJKy)
